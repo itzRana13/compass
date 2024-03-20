@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click To Brick</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/css/search.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        
+        <style>
+            /* Hamburger Menu Styles */
+            /* .nav-bar-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            } */
+
+            /* .nav-menu {
+            display: none; 
+            } */
+            ul{
+                list-style: inherit;
+                padding: 0;
+            }
+            .nav-menu.active {
+                display: block; 
+            }
+            .nav-bar-transparent {
+                background-color: #000 !important;
+            }
+            .nav-link {
+                text-decoration: none;
+            }
+
+            /* Hamburger Icon Styles */
+            .hamburger {
+                display: none; 
+                cursor: pointer;
+            }
+
+           
+            .col {
+                display: none;
+            }
+            ::-webkit-scrollbar {
+                width: 6px;
+                height: 10px;
+            }
+
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #8888885e;
+                border-radius: 15px;
+            }
+
+            
+                        
+            /* Media Query for Small Screens */
+            @media screen and (max-width: 768px) {
+                .nav-menu {
+                    flex-direction: column;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: white;
+                    box-shadow: 0px 4px 10px rgb(0 0 0 / 49%); 
+                    width: 100%;
+                    padding: 10px;
+                    z-index: 1000;
+                }
+
+                .nav-bar-section .button_login, .nav-link {
+                    color: #000;
+                    
+                }
+            
+                .hamburger {
+                    display: block; 
+                }
+
+                .nav-item {
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+
+            /* Show the navigation menu on small screens */
+            @media screen and (max-width: 768px) {
+                .nav-menu {
+                    display: none; 
+                }
+            }
+
+        </style>
+               
+    </head>
+    <body>
+        <!-- Navbar-section_Start -->
+        <section class="nav-bar-section" style="background-color: #000 !important;" >
+            <div class="nav-body">
+                <div class="logo">
+                    <a href="../../index.html"><img src="logo.png" alt="Logo" width="50px"></a>
+                </div>
+                <div class="hamburger">&#9776;</div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" >Services</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li class="dropdown-submenu">
+                                    <a class="test" >Commercial <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="./properties/Commercial/office_spaces.html">Office Spaces</a></li>
+                                        <li><a tabindex="-1" href="./properties/Commercial/studio.html">Studio</a></li>
+                                        <li><a tabindex="-1" href="./properties/Commercial/warehouses.html">Warehouses</a></li>
+                                        <li><a tabindex="-1" href="./properties/Commercial/industrial.html">Industrial Properties</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test">Residential<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  href="./properties/Residential/luxury_apartments.html">Luxury Apartments</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.html">Our Markets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact-us-button" class="nav-link wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./properties/listing_property.html">List Your Property </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Leasing</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Navbar-section_End -->
+        <!-- Main-section_Start -->
+        <main>
+            <!-- Property_Section_Start -->
+            <section class="search-section" >
+                <div class="Listings_filters__9cZk5">
+                    <form class="Filters_form__f573C">
+                        <fieldset class="Form_fieldset__Zxoq8">
+                            <div class="Filters_container__ZDRLz">
+                                <div class="Search_container__tB5Lk Search_search__gf10f" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R5dacm:" data-state="closed" data-lp-popover-trigger="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M8 11a5 5 0 1 0 10 0 5 5 0 0 0-10 0Zm12 0a7 7 0 0 1-10.594 6.008l-3.699 3.7a1 1 0 0 1-1.414-1.415l3.554-3.555A7 7 0 1 1 20 11Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <input class="Search_input__KlfWT Search_search__gf10f" data-test-id="omni-search" placeholder="Address, City, Neighborhood" value="">
+                                </div>
+                                <div class="Filters_filters__tq_Ki">
+                                    <div class="Filters_fields__cnGTf">
+                                        <div class="Switch_switch__i1ZWJ">
+                                            <input type="radio" id="sale" class="Switch_input__lVZjk" name="listingType" value="false" checked>
+                                            <label for="sale" class="Switch_label__Uwutu">For Sale</label>
+                                            <input type="radio" id="rent" class="Switch_input__lVZjk" name="listingType" value="true">
+                                            <label for="rent" class="Switch_label__Uwutu">For Rent</label>
+                                            <div class="Switch_slider"></div>
+                                        </div>
+                                        <button type="button" class="Button_dropdown__F3xMk SelectPriceRange_trigger__kc8Eg Button_fullwidth__tptZp" data-size="regular" data-variant="dropdown" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R4pdacm:" data-state="closed" data-lp-popover-trigger="true">
+                                            <span>Any Price</span>
+                                            <div class="Expander_expander__9LBme">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div data-radix-popper-content-wrapper="" style="position: fixed; left: -123px; top: 21px; transform: translate3d(662px, 126px, 0px); min-width: max-content; z-index: 2; --radix-popper-anchor-width: 165.60000610351562px; --radix-popper-anchor-height: 37.60000228881836px; --radix-popper-available-width: 873.6749877929688px; --radix-popper-available-height: 365.6000099182129px; --radix-popper-transform-origin: 0% 0px;">
+                                            <div data-side="bottom" data-align="start" data-state="open" role="dialog" id="radix-:R4pdacm:" class="Popover_content__lOm_K Popover_card__LymNa" data-lp-popover-content="true" tabindex="-1" style="--radix-popover-content-transform-origin: var(--radix-popper-transform-origin); --radix-popover-content-available-width: var(--radix-popper-available-width); --radix-popover-content-available-height: var(--radix-popper-available-height); --radix-popover-trigger-width: var(--radix-popper-anchor-width); --radix-popover-trigger-height: var(--radix-popper-anchor-height);">
+                                                <div class="RangeSelect_container__0xztc Filters_pricerange__CAa_g">
+                                                    <div class="RangeSelect_field__DMxZA">
+                                                        <label for=":r144:" class="Label_label__ZMwUT RangeSelect_label__C8VxK">Minimum 
+                                                            <span style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">Price</span>
+                                                        </label>
+                                                        <div class="RangeSelect_input__PcDHu">
+                                                            <div class="Combobox_container__FvaoH">
+                                                                <input autocomplete="off" id=":r144:" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" name="priceMin" inputmode="numeric" placeholder="No Min" class="Combobox_combobox___QxCT" value="" aria-controls=":r147:">
+                                                                <button type="button" class="Combobox_icon__aFsYe" aria-hidden="true" tabindex="-1">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div role="presentation" style="position: absolute; top: 0px; left: 0px; z-index: 1; --popover-overflow-padding: 8px; --popover-anchor-width: 190px; --popover-available-width: 848px; --popover-available-height: 276px; width: 190px; transform: translate3d(18px, 81px, 0px);">
+                                                                <div id=":r1an:" data-dialog="" role="listbox" tabindex="-1" class="Combobox_popover__krW1d" style="position: relative;">
+                                                                    <div data-composite-hover="" data-command="" id=":r1aq:" class="Combobox_option__RdEO_" data-test-id="priceMin-No Min" tabindex="-1" role="option">No Min</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1as:" class="Combobox_option__RdEO_" data-test-id="priceMin-$300,000" tabindex="-1" role="option">$300,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1au:" class="Combobox_option__RdEO_" data-test-id="priceMin-$400,000" tabindex="-1" role="option">$400,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1b0:" class="Combobox_option__RdEO_" data-test-id="priceMin-$500,000" tabindex="-1" role="option">$500,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1b2:" class="Combobox_option__RdEO_" data-test-id="priceMin-$600,000" tabindex="-1" role="option">$600,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1b4:" class="Combobox_option__RdEO_" data-test-id="priceMin-$700,000" tabindex="-1" role="option">$700,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1b6:" class="Combobox_option__RdEO_" data-test-id="priceMin-$800,000" tabindex="-1" role="option">$800,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1b8:" class="Combobox_option__RdEO_" data-test-id="priceMin-$900,000" tabindex="-1" role="option">$900,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1ba:" class="Combobox_option__RdEO_" data-test-id="priceMin-$1M" tabindex="-1" role="option">$1M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bc:" class="Combobox_option__RdEO_" data-test-id="priceMin-$1.25M" tabindex="-1" role="option">$1.25M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1be:" class="Combobox_option__RdEO_" data-test-id="priceMin-$1.5M" tabindex="-1" role="option">$1.5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bg:" class="Combobox_option__RdEO_" data-test-id="priceMin-$1.75M" tabindex="-1" role="option">$1.75M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bi:" class="Combobox_option__RdEO_" data-test-id="priceMin-$2M" tabindex="-1" role="option">$2M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bk:" class="Combobox_option__RdEO_" data-test-id="priceMin-$2.5M" tabindex="-1" role="option">$2.5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bm:" class="Combobox_option__RdEO_" data-test-id="priceMin-$3M" tabindex="-1" role="option">$3M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bo:" class="Combobox_option__RdEO_" data-test-id="priceMin-$4M" tabindex="-1" role="option">$4M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bq:" class="Combobox_option__RdEO_" data-test-id="priceMin-$5M" tabindex="-1" role="option">$5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bs:" class="Combobox_option__RdEO_" data-test-id="priceMin-$6M" tabindex="-1" role="option">$6M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1bu:" class="Combobox_option__RdEO_" data-test-id="priceMin-$7M" tabindex="-1" role="option">$7M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1c0:" class="Combobox_option__RdEO_" data-test-id="priceMin-$8M" tabindex="-1" role="option">$8M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1c2:" class="Combobox_option__RdEO_" data-test-id="priceMin-$10M" tabindex="-1" role="option">$10M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1c4:" class="Combobox_option__RdEO_" data-test-id="priceMin-$12M" tabindex="-1" role="option">$12M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1c6:" class="Combobox_option__RdEO_" data-test-id="priceMin-$15M" tabindex="-1" role="option">$15M</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span data-delimiter="true" class="RangeSelect_delimiter__FYS_U">to</span>
+                                                    <div class="RangeSelect_field__DMxZA">
+                                                        <label for=":r144:" class="Label_label__ZMwUT RangeSelect_label__C8VxK">Maximum 
+                                                            <span style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">Price</span>
+                                                        </label>
+                                                        <div class="RangeSelect_input__PcDHu">
+                                                            <div class="Combobox_container__FvaoH">
+                                                                <input autocomplete="off" id=":r145:" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" name="priceMax" inputmode="numeric" placeholder="No Max" class="Combobox_combobox___QxCT" value="" aria-controls=":r15p:">
+                                                                <button type="button" class="Combobox_icon__aFsYe" aria-hidden="true" tabindex="-1">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div role="presentation" style="position: absolute; top: 0px; left: 0px; z-index: 1; --popover-overflow-padding: 8px; --popover-anchor-width: 190px; --popover-available-width: 601px; --popover-available-height: 276px; width: 190px; transform: translate3d(264px, 81px, 0px);">
+                                                                <div id=":r1fu:" data-dialog="" role="listbox" tabindex="-1" class="Combobox_popover__krW1d" style="position: relative;">
+                                                                    <div data-composite-hover="" data-command="" id=":r1g1:" class="Combobox_option__RdEO_" data-test-id="priceMax-$300,000" tabindex="-1" role="option">$300,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1g3:" class="Combobox_option__RdEO_" data-test-id="priceMax-$400,000" tabindex="-1" role="option">$400,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1g5:" class="Combobox_option__RdEO_" data-test-id="priceMax-$500,000" tabindex="-1" role="option">$500,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1g7:" class="Combobox_option__RdEO_" data-test-id="priceMax-$600,000" tabindex="-1" role="option">$600,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1g9:" class="Combobox_option__RdEO_" data-test-id="priceMax-$700,000" tabindex="-1" role="option">$700,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gb:" class="Combobox_option__RdEO_" data-test-id="priceMax-$800,000" tabindex="-1" role="option">$800,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gd:" class="Combobox_option__RdEO_" data-test-id="priceMax-$900,000" tabindex="-1" role="option">$900,000</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gf:" class="Combobox_option__RdEO_" data-test-id="priceMax-$1M" tabindex="-1" role="option">$1M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gh:" class="Combobox_option__RdEO_" data-test-id="priceMax-$1.25M" tabindex="-1" role="option">$1.25M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gj:" class="Combobox_option__RdEO_" data-test-id="priceMax-$1.5M" tabindex="-1" role="option">$1.5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gl:" class="Combobox_option__RdEO_" data-test-id="priceMax-$1.75M" tabindex="-1" role="option">$1.75M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gn:" class="Combobox_option__RdEO_" data-test-id="priceMax-$2M" tabindex="-1" role="option">$2M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gp:" class="Combobox_option__RdEO_" data-test-id="priceMax-$2.5M" tabindex="-1" role="option">$2.5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gr:" class="Combobox_option__RdEO_" data-test-id="priceMax-$3M" tabindex="-1" role="option">$3M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gt:" class="Combobox_option__RdEO_" data-test-id="priceMax-$4M" tabindex="-1" role="option">$4M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1gv:" class="Combobox_option__RdEO_" data-test-id="priceMax-$5M" tabindex="-1" role="option">$5M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1h1:" class="Combobox_option__RdEO_" data-test-id="priceMax-$6M" tabindex="-1" role="option">$6M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1h3:" class="Combobox_option__RdEO_" data-test-id="priceMax-$7M" tabindex="-1" role="option">$7M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1h5:" class="Combobox_option__RdEO_" data-test-id="priceMax-$8M" tabindex="-1" role="option">$8M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1h7:" class="Combobox_option__RdEO_" data-test-id="priceMax-$10M" tabindex="-1" role="option">$10M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1h9:" class="Combobox_option__RdEO_" data-test-id="priceMax-$12M" tabindex="-1" role="option">$12M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1hb:" class="Combobox_option__RdEO_" data-test-id="priceMax-$15M" tabindex="-1" role="option">$15M</div>
+                                                                    <div data-composite-hover="" data-command="" id=":r1hd:" class="Combobox_option__RdEO_" data-test-id="priceMax-$20M" tabindex="-1" role="option">$20M</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="SelectBeds_container__KCdR_">
+                                            <button type="button" role="combobox" aria-controls="radix-:R6pdacm:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" class="Select_trigger__X_dKT" data-size="small" data-variant="default" fdprocessedid="pj1y4d">
+                                                <span style="pointer-events:none">0+ Beds</span>
+                                                <span aria-hidden="true" class="Select_icon__ckUU_">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <select aria-hidden="true" tabindex="-1" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+                                                <option value="" selected="">0+ Beds</option>
+                                                <option value="1">1+ Beds</option>
+                                                <option value="2">2+ Beds</option>
+                                                <option value="3">3+ Beds</option>
+                                                <option value="4">4+ Beds</option>
+                                                <option value="5">5+ Beds</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" role="combobox" aria-controls="radix-:R8pdacm:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" class="Select_trigger__X_dKT" data-size="small" data-variant="default">
+                                            <span style="pointer-events:none">0+ Baths</span>
+                                            <span aria-hidden="true" class="Select_icon__ckUU_">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <select aria-hidden="true" tabindex="-1" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+                                            <option value="" selected="">0+ Baths</option>
+                                            <option value="1">1+ Baths</option>
+                                            <option value="2">2+ Baths</option>
+                                            <option value="3">3+ Baths</option>
+                                            <option value="4">4+ Baths</option>
+                                            <option value="5">5+ Baths</option>
+                                        </select>
+                                        <button type="button" class="Button_dropdown__F3xMk SelectPropertyTypes_trigger___f60h Button_fullwidth__tptZp" data-size="regular" data-variant="dropdown" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rapdacm:" data-state="closed" data-lp-popover-trigger="true">Any Property Type
+                                            <div class="Expander_expander__9LBme">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="Button_dropdown__F3xMk Filters_trigger__mM5m6 Button_fullwidth__tptZp" data-size="regular" data-variant="dropdown" data-test-id="more-filters-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r78:" data-state="closed">
+                                        <span class="Filters_tablet-only__cbBSW">Filters</span>
+                                        <span class="Filters_laptop-only__kpqgC">More Filters</span>
+                                        <span class="Filters_desktop-only__YSQpM">More Filters</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <button type="button" class="Button_dropdown__F3xMk SavedSearch_trigger__11L_T Button_fullwidth__tptZp" data-size="regular" data-variant="dropdown" data-test-id="saved-search-trigger-logged-out">Save Search</button>
+                </div>
+            </section>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Property_Area_Start -->
+                    <div class="col-md-6 col-xl-6 col-sm-12 property-area">
+                        <div class="property-section">
+                            <div class="ListingSort_sort__5mdNy">
+                                <label class="Label_label__ZMwUT">
+                                    <p class="Text_text__YABjM">Sort:</p>
+                                    <button type="button" role="combobox" aria-controls="radix-:R4l5lacm:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" class="Select_trigger__X_dKT SelectSort_sort__RNFc5" data-size="small" data-variant="default" fdprocessedid="cs3w6">
+                                        <span style="pointer-events:none">Newest</span>
+                                        <span aria-hidden="true" class="Select_icon__ckUU_">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </label>
+                                <p class="Text_text__YABjM Text_weight-bold__nnN1u">2 <span class="Text_text__YABjM Text_color-light___uW1x">of</span> 38</p>
+                            </div>
+                            <div>
+                                <ul class="ListingGrid_grid__3AqFd ">
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 90 Park Terrace East Unit: 3-A">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1023028391/1/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDQ0NjY2Mg/u4Pe6_V6Q8DXJn84htMzCs-3ifyjrYK9FfU0ZzqDCSs" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$324,900</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="sqft-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">655 sqft</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="90 Park Terrace East Unit: 3-A, New York City NY, 10034" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/14970976165-90-Park-Terrace-E-Unit:-3-A-New-York-City-NY-10034">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">90 Park Terrace East Unit: 3-A, New York City NY, 10034</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: OLRS-1998935</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 39-50 52nd Street Unit: 3E">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1046517292/0/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDM2MDcxNQ/Ydc_N_paf3-nOOU-PMJhaY7XAMNFsLGFcawSGQsjWB0" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$365,000</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="39-50 52nd Street Unit: 3E, New York City NY, 11377" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/6105620256610481134-39-50-52nd-Street-Unit-3E">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">39-50 52nd Street Unit: 3E, New York City NY, 11377</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: COMP-1424733859606523337</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 90 Park Terrace East Unit: 3-A">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1023028391/1/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDQ0NjY2Mg/u4Pe6_V6Q8DXJn84htMzCs-3ifyjrYK9FfU0ZzqDCSs" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$324,900</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="sqft-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">655 sqft</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="90 Park Terrace East Unit: 3-A, New York City NY, 10034" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/14970976165-90-Park-Terrace-E-Unit:-3-A-New-York-City-NY-10034">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">90 Park Terrace East Unit: 3-A, New York City NY, 10034</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: OLRS-1998935</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 39-50 52nd Street Unit: 3E">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1046517292/0/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDM2MDcxNQ/Ydc_N_paf3-nOOU-PMJhaY7XAMNFsLGFcawSGQsjWB0" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$365,000</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="39-50 52nd Street Unit: 3E, New York City NY, 11377" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/6105620256610481134-39-50-52nd-Street-Unit-3E">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">39-50 52nd Street Unit: 3E, New York City NY, 11377</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: COMP-1424733859606523337</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 90 Park Terrace East Unit: 3-A">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1023028391/1/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDQ0NjY2Mg/u4Pe6_V6Q8DXJn84htMzCs-3ifyjrYK9FfU0ZzqDCSs" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$324,900</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="sqft-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">655 sqft</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="90 Park Terrace East Unit: 3-A, New York City NY, 10034" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/14970976165-90-Park-Terrace-E-Unit:-3-A-New-York-City-NY-10034">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">90 Park Terrace East Unit: 3-A, New York City NY, 10034</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: OLRS-1998935</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 39-50 52nd Street Unit: 3E">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1046517292/0/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDM2MDcxNQ/Ydc_N_paf3-nOOU-PMJhaY7XAMNFsLGFcawSGQsjWB0" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$365,000</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="39-50 52nd Street Unit: 3E, New York City NY, 11377" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/6105620256610481134-39-50-52nd-Street-Unit-3E">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">39-50 52nd Street Unit: 3E, New York City NY, 11377</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: COMP-1424733859606523337</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 90 Park Terrace East Unit: 3-A">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1023028391/1/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDQ0NjY2Mg/u4Pe6_V6Q8DXJn84htMzCs-3ifyjrYK9FfU0ZzqDCSs" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$324,900</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="sqft-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">655 sqft</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="90 Park Terrace East Unit: 3-A, New York City NY, 10034" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/14970976165-90-Park-Terrace-E-Unit:-3-A-New-York-City-NY-10034">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">90 Park Terrace East Unit: 3-A, New York City NY, 10034</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: OLRS-1998935</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ListingInformationCard_card__L37kD ListingInformationCard_default__PkcBC Flex_direction-column__Klwyo Box_bg-base__NIXu3 Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP Base_br-small__5v_21 Base_bl-small__Robft">
+                                            <div class="ListingInformationCard_header__grDp8 Flex_direction-column__Klwyo Base_display-flex__2s2Hu Base_tl-small__OKNsk Base_tr-small__gpQiP">
+                                                <div class="ListingInformationCard_favorite__UynKR">
+                                                    <button type="button" class="Button_icon__5X1Vf Favorite_button__tE3wY Button_fullwidth__tptZp" data-size="regular" data-variant="icon" data-test-id="listing-card-favorite-button" aria-label="Save Property: 39-50 52nd Street Unit: 3E">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false" tabindex="-1" aria-labelledby="">
+                                                            <path fill="currentColor" d="M12 21c.211 0 .514-.137.735-.265C18.405 17.205 22 13.098 22 8.922 22 5.45 19.553 3 16.39 3c-1.9 0-3.376.992-4.3 2.523a.105.105 0 0 1-.179 0C11.004 4 9.51 3 7.61 3 4.447 3 2 5.451 2 8.922c0 4.176 3.595 8.284 9.275 11.813.211.128.514.265.725.265Z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ListingInformationCard_imageContainer__Yt84F Base_display-flex__2s2Hu">
+                                                    <div class="ListingInformationCard_status__96EWk Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-dark__2jaAr Box_text-white__2fZ7x Base_display-flex__2s2Hu Base_pt-xxs__6nO7L Base_pr-xs__cKnN3 Base_pb-xxs__SnA0C Base_pl-xs__jdB9Z Base_tl-medium__7wgSC Base_tr-medium__1aJy3 Base_br-medium__Lx53H Base_bl-medium__vpbub">
+                                                        <p class="Text_text__YABjM Text_variant-l12b__FMc28">Active</p>
+                                                    </div>
+                                                    <span class="Image_image__PRSkH ListingInformationCard_image__1V9y7 Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Box_bg-mercury__nix9n Base_display-flex__2s2Hu">
+                                                        <img alt="" src="https://api-trestle.corelogic.com/trestle/Media/REBNY/Property/PHOTO-jpeg/1046517292/0/MzM2Ny8yMTY3LzIw/MjAvMTAyNjUvMTcxMDM2MDcxNQ/Ydc_N_paf3-nOOU-PMJhaY7XAMNFsLGFcawSGQsjWB0" height="190" width="340" aria-hidden="true" loading="lazy" style="width: 100%; opacity: 1; transition: opacity 500ms ease-in 0s;">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="ListingInformationCard_body__T65Ik Flex_direction-column__Klwyo Flex_justify-start__jgzdT Flex_gap-2__lyUY_ Box_border-color-base__APNCY Box_border-size-base__L85Bz Box_border-top-none___Wk0R Base_display-flex__2s2Hu Base_height-full__SRzgT Base_pt-base__8Vwz7 Base_pr-base__icwl_ Base_pb-base__Fou7Z Base_pl-base__is7gk Base_br-small__5v_21 Base_bl-small__Robft">
+                                                <div class="Base_pb-xxs__SnA0C">
+                                                    <h2 class="Heading_heading__1hZok Heading_variant-l16b__LCgcA">$365,000</h2>
+                                                </div>
+                                                <div class="Flex_align-center__1Cb1Y Flex_wrap-wrap__mcLTw Flex_gap-4___gqSL Base_display-flex__2s2Hu">
+                                                    <p data-test-id="beds-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1bd</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="bath-in-card" class="Text_text__YABjM Text_color-base__kWWn4 Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">1ba</p>
+                                                    <hr class="Divider_divider__egD3X Divider_dot__Vs2HQ" style="background: rgb(132, 132, 132);">
+                                                    <p data-test-id="status-in-card" class="Text_text__YABjM Text_color-light___uW1x Text_wrap-nowrap__VsHjj Text_variant-l12__mnn_U">Active</p>
+                                                </div>
+                                                <a aria-label="39-50 52nd Street Unit: 3E, New York City NY, 11377" class="ListingInformationCard_link__2I1TD" href="/home-search/listings/6105620256610481134-39-50-52nd-Street-Unit-3E">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">39-50 52nd Street Unit: 3E, New York City NY, 11377</p>
+                                                    </div>
+                                                </a>
+                                                <div class="Flex_align-end__Q4sxg Flex_justify-between__P1_bt Flex_gap-xxs__RnujI Base_display-flex__2s2Hu" style="flex: 1 1 0%; overflow: hidden;">
+                                                    <div class="Box_text-light__kewdR" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                                                        <p class="Text_text__YABjM Text_color-light___uW1x Text_variant-l12__mnn_U">MLS®: COMP-1424733859606523337</p>
+                                                    </div>
+                                                    <div class="Flex_grow-none__PP0A_ Flex_shrink-none__B9jdR Base_display-flex__2s2Hu">
+                                                        <span class="Image_image__PRSkH Flex_align-center__1Cb1Y Flex_justify-center__WFE1e Base_display-flex__2s2Hu">
+                                                            <img alt="" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ghg6svcisrh0ovuycxeb/rls_logo_vertical2020" width="50" height="30" style="max-height: 30px; max-width: 50px; height: auto; width: auto;">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property_Area_End -->
+                    <!-- Map_Area_Start -->
+                    <div class="col-md-6 col-xl-6 col-sm-12 map-area">
+                        <div class="Listings_map__u_uOU">
+                            <div class="Map_interactiveMap__LhXql">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14011.26704263201!2d77.389849!3d28.60527345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710491844125!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- Map_Area_End -->
+                </div>
+            </div>
+            <!-- Property_Section_End -->
+        </main>
+        <!-- Main_Section_End -->
+
+    
+
+        <!-- Contact_form_Start -->
+        <div id="modal-global-contact-us" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="contact-form redesign " style="background-image: url('https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/kyfnzxuquogjkgqy8xvv/illgander-1260622')">
+                    <div class="container">
+                        <div class="section-details" style="--colorTxt: #ffffff">
+                            <h2>Contact Details</h2>
+                            <div class="info-zone">
+                                <div class="info-zone_contact type_user">
+                                    <h4 class="serif">Philip Scheinfeld Team</h4>
+                                    <div class="info-zone_contact_cell">
+                                        <i>
+                                            <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7964 8.1207H19.2036V8.7279C19.2036 10.8195 20.9082 12.5259 23.001 12.5259H24.741L25.2852 20.7051C25.3776 22.1235 24.2868 23.2719 22.8822 23.2719H7.0032C5.5944 23.2719 4.5084 22.1085 4.6002 20.7039C4.782 17.9895 4.9152 15.2313 5.154 12.5265H6.9996C9.0918 12.5265 10.797 10.8207 10.797 8.7285V8.1207H10.7964ZM11.46 16.5807C11.46 14.6565 13.0188 13.0977 14.943 13.0977C16.8666 13.0977 18.4254 14.6571 18.4254 16.5807C18.4254 18.5055 16.8678 20.0631 14.943 20.0631C13.02 20.0637 11.46 18.5043 11.46 16.5807ZM14.943 12.0381C12.4344 12.0381 10.4004 14.0721 10.4004 16.5807C10.4004 19.0887 12.435 21.1233 14.943 21.1233C17.4486 21.1233 19.485 19.0869 19.485 16.5807C19.485 14.0727 17.451 12.0381 14.943 12.0381ZM9.0846 4.8363C8.22 4.8363 7.512 5.5443 7.512 6.4089V8.7285C7.512 9.0093 7.2804 9.2415 6.999 9.2415H1.5726C1.2906 9.2415 1.0596 9.0111 1.0596 8.7285V6.9285C1.0596 6.4797 1.1628 6.0945 1.3902 5.7069C1.896 4.8465 2.7294 4.1013 3.795 3.4749C9.279 0.2517 20.7192 0.2523 26.2044 3.4749C27.2706 4.1013 28.104 4.8465 28.6098 5.7069C28.8354 6.0921 28.9398 6.4815 28.9398 6.9285V8.7285C28.9398 9.0111 28.71 9.2415 28.4268 9.2415H23.0004C22.719 9.2415 22.4874 9.0093 22.4874 8.7285V6.4089C22.4874 5.5425 21.7806 4.8363 20.9148 4.8363H9.0846ZM8.571 6.4089C8.571 6.1263 8.8026 5.8965 9.0846 5.8965H20.9154C21.1968 5.8965 21.429 6.1275 21.429 6.4089V8.7285C21.429 9.5943 22.1352 10.3017 23.001 10.3017H28.4274C29.292 10.3017 30 9.5931 30 8.7285V6.9285C30 6.2835 29.8464 5.7291 29.5206 5.1729C28.9188 4.1493 27.9564 3.2799 26.7384 2.5641C20.9214 -0.8547 9.0798 -0.8547 3.2622 2.5641C2.0436 3.2799 1.0812 4.1487 0.48 5.1729C0.153 5.7291 0 6.2835 0 6.9279V8.7279C0 9.5925 0.7092 10.3011 1.5726 10.3011H6.999C7.8648 10.3011 8.571 9.5937 8.571 8.7279V6.4089ZM9.7368 7.5915V8.7285C9.7368 10.2387 8.5092 11.4669 6.999 11.4669H4.6686C4.3914 11.4669 4.164 11.6799 4.1412 11.9511C3.8892 14.8347 3.7386 17.7435 3.5448 20.6331C3.4116 22.6425 4.989 24.3315 7.0032 24.3315H22.8822C24.882 24.3315 26.475 22.6575 26.3406 20.6343L25.7622 11.9607C25.7436 11.6811 25.5102 11.4675 25.2342 11.4675L23.001 11.4663C21.4902 11.4663 20.2632 10.2375 20.2632 8.7279V7.5909C20.2632 7.2981 20.0262 7.0611 19.7334 7.0611H10.2666C9.9738 7.0611 9.7368 7.2987 9.7368 7.5915Z" fill="#1A1A1A"></path>
+                                            </svg>
+                                        </i>
+                                        <p class="contact_title">Phone</p>
+                                        <a href="tel:518-524-5168" class="lp-link info-zone_contact_link link hyperlink-style-2">518-524-5168</a>
+                                    </div>
+                                    <div class="info-zone_contact_cell">
+                                        <i>
+                                            <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 0C0.903517 0 0 0.903517 0 2V16.6667C0 17.7631 0.903517 18.6667 2 18.6667H28C29.0965 18.6667 30 17.7631 30 16.6667V2C30 0.903517 29.0965 0 28 0H2ZM2.4375 1.33333H27.5625L15.6458 11.4896C15.3389 11.7512 14.6612 11.7512 14.3542 11.4896L2.4375 1.33333ZM1.33333 2.13542L10.1979 9.6979L1.33333 16.5729V2.13542ZM28.6667 2.13542V16.5729L19.8021 9.6979L28.6667 2.13542ZM11.2396 10.5833L13.4896 12.5C14.3543 13.2369 15.6457 13.2369 16.5104 12.5L18.7604 10.5833L27.4687 17.3333H2.53125L11.2396 10.5833Z" fill="#1A1A1A"></path>
+                                            </svg>
+                                        </i>
+                                        <p class="contact_title">Email</p>
+                                        <a href="mailto:thephilipscheinfeldteam@compass.com" class="lp-link info-zone_contact_link link hyperlink-style-2">thephilipscheinfeldteam@compass.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-zone_contact type_user">
+                                </div>
+                                <div class="info-zone_contact">
+                                    <div class="info-zone_contact_cell">
+                                            <i>
+                                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="#1A1A1A"></path>
+                                                    <path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="#1A1A1A"></path>
+                                                    <path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="#1A1A1A"></path>
+                                                </svg>
+                                            </i>
+                                        <p class="info-wrap-contact_title">Address</p>
+                                        <p class="info-zone_contact_link pre-line">10 East 53rd St. 5th Floor New York, NY 10022</p>
+                                    </div>
+                                </div>
+                                <div class="info-zone_contact">
+                                    <div class="info-zone_contact_cell">
+                                        <p class="pre-line"></p><div></div><div id="ig22"><p><strong>Licensed in New York and Florida</strong></p></div><>* { box-sizing: border-box; } body {margin: 0;}ul{list-style:inherit;}#ig22{padding:0px;}</<style>
+                                        
+                                        </style>><p></p>
+                                    </div>
+                                </div>
+                                <ul class="lp-socials social_icons-style-2 socials socials--grey socials_zone footer__contact-column">
+                                    <li>
+                                        <a href="https://www.instagram.com/philipscheinfeldteam/?hl=en" class="lp-socials__link socials__item wow fadeInUp socials__link" data-wow-delay=".0s" target="_blank" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
+                                            <svg viewBox="0 0 9 9" width="18" height="18"><path d="M7.43.911a.658.658 0 100 1.316.658.658 0 000-1.316M4.5 6.33a1.83 1.83 0 110-3.659 1.83 1.83 0 010 3.659m0-4.648a2.818 2.818 0 10-.001 5.637A2.818 2.818 0 004.5 1.682m4.468 5.037c-.024.534-.114.826-.189 1.018-.1.256-.218.439-.41.63a1.697 1.697 0 01-.632.412c-.192.075-.484.165-1.018.19C6.139 8.995 5.966 9 4.5 9c-1.465 0-1.64-.005-2.218-.031-.534-.025-.826-.115-1.019-.19-.256-.1-.439-.218-.63-.411a1.703 1.703 0 01-.412-.631C.146 7.545.057 7.253.032 6.719.006 6.139 0 5.966 0 4.5c0-1.465.006-1.639.032-2.218.025-.535.114-.826.189-1.019.1-.256.22-.439.411-.63C.824.44 1.007.32 1.263.22c.193-.075.485-.164 1.019-.189C2.862.006 3.035 0 4.5 0c1.466 0 1.639.006 2.219.032.534.025.826.114 1.018.189.256.1.439.22.632.411.192.192.31.375.41.631.075.193.165.484.189 1.019.027.58.032.753.032 2.218 0 1.466-.005 1.64-.032 2.219"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.compass.com/agents/the-philip-scheinfeld-team/" class="lp-socials__link socials__item wow fadeInUp socials__link" data-wow-delay=".1s" target="_blank" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                        <svg width="20" height="20" viewBox="0 0 60.14 60"><path d="M29.86 0a30 30 0 00.28 60 30.03 30.03 0 0030-30A30 30 0 0029.86 0zm.28 8a22.03 22.03 0 0122 22 22 22 0 11-22-22zm7.18 9.17l-20 20 5.65 5.66 20-20z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>          
+                            </div>
+                        </div>
+                        <div class="section-message">
+                            <form id="contact-form" data-type="contact-form">
+                                <h2>Submit a Message</h2>
+                                <div class="h-pot">
+                                    <label for="-middleName">Middle Name</label>
+                                    <input id="-middleName" name="middleName" value="" autocomplete="off" tabindex="-1">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-name" class="lp-label">Name</label>
+                                    <input id="prod-name" name="name" value="" required="" class="lp-input lp-input--light" fdprocessedid="7bie3n">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-email" class="lp-label">Email</label>
+                                    <input id="prod-email" type="email" name="email" value="" required="" class="lp-input lp-input--light" fdprocessedid="rl7bl">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-phone" class="lp-label">Phone</label>
+                                    <input id="prod-phone" type="tel" name="phoneNumber" value="" required="" class="lp-input lp-input--light" fdprocessedid="44zxz">
+                                </div>
+                                <div class="lp-input-group m16">
+                                    <label for="prod-message" class="lp-label">Message</label>
+                                    <textarea id="prod-message" name="message" value="" required="" class="lp-input"></textarea>
+                                </div>
+                                <div class="lp-disclaimer">
+                                    By providing The Philip Scheinfeld Team
+                                    your contact information, you acknowledge and agree to our
+                                    <a href="/terms-and-conditions" target="_blank">Privacy Policy</a> and consent to receiving marketing communications,
+                                    including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices.
+                                    This consent isn’t necessary for purchasing any products or services and you may opt out at any time.
+                                    To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe
+                                    link in the emails. Message and data rates may apply.
+                                </div>
+                                
+                                <input style="display: none;" type="text" name="source" value="CONTACT_INQUIRY">
+                                <button type="submit" id="submit-button" class="submitButton lp-btn button-style-2" fdprocessedid="t7izzf">
+                                    <span class="label-initial">Submit</span>
+                                    <span class="label-loading" style="display:none;">Submitting</span>
+                                    <span class="label-success" style="display:none;">Submitted</span>
+                                    <span class="submit-icon fas fa-circle-notch fa-spin" aria-hidden="true"></span>
+                                </button>
+                                <p class="success-message success hide" style="display:none;">
+                                    Message sent successfully!
+                                </p>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close lp-close" type="button" aria-label="close modal" fdprocessedid="otb9u">
+                <span class="lp-close-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <!-- Contact_form_End -->
+
+        <!-- Script section start -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="../../assets/js/script.js"></script>
+       
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+
+                hamburger.addEventListener("click", function() {
+                    navMenu.classList.toggle("active");
+                });
+            });
+            const radioInputs = document.querySelectorAll('.sliding-radio input[type="radio"]');
+            const slider = document.querySelector('.sliding-radio .slider');
+
+            radioInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    const percent = input.id === 'sale' ? '0%' : '50%';
+                    slider.style.left = percent;
+                });
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                const button = document.querySelector('.SelectPriceRange_trigger__kc8Eg');
+                const dropdown = document.getElementById('radix-:R4pdacm:');
+
+                // Function to toggle dropdown visibility
+                function toggleDropdown() {
+                    const expanded = button.getAttribute('aria-expanded') === 'true';
+                    button.setAttribute('aria-expanded', String(!expanded));
+                    dropdown.style.display = expanded ? 'none' : 'block';
+                }
+
+                // Event listener for button click to toggle dropdown
+                button.addEventListener('click', function(event) {
+                    toggleDropdown();
+                });
+
+                // Event listener to close dropdown when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                        button.setAttribute('aria-expanded', 'false');
+                        dropdown.style.display = 'none';
+                    }
+                });
+
+                // Select price range
+                dropdown.addEventListener('click', function(event) {
+                    const target = event.target;
+                    if (target.classList.contains('Combobox_option__RdEO_')) {
+                        const selectedPrice = target.textContent.trim();
+                        button.querySelector('span').textContent = selectedPrice;
+                        button.setAttribute('aria-expanded', 'false');
+                        dropdown.style.display = 'none';
+                    }
+                });
+
+                // Hide dropdown initially
+                button.setAttribute('aria-expanded', 'false');
+                dropdown.style.display = 'none';
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                const minButton = document.querySelector('.Combobox_combobox___QxCT[id=":r144:"]');
+                const maxButton = document.querySelector('.Combobox_combobox___QxCT[id=":r145:"]');
+                const minDropdown = document.getElementById(':r1an:');
+                const maxDropdown = document.getElementById(':r1fu:');
+                const anyPriceInput = document.querySelector('.Button_dropdown__F3xMk.SelectPriceRange_trigger__kc8Eg > span');
+
+                // Function to toggle dropdown visibility
+                function toggleDropdown(button, dropdown) {
+                    const expanded = button.getAttribute('aria-expanded') === 'true';
+                    button.setAttribute('aria-expanded', String(!expanded));
+                    dropdown.style.display = expanded ? 'none' : 'block';
+                }
+
+                // Event listener for minimum button click to toggle dropdown
+                minButton.addEventListener('click', function(event) {
+                    toggleDropdown(minButton, minDropdown);
+                    maxButton.setAttribute('aria-expanded', 'false');
+                    maxDropdown.style.display = 'none';
+                });
+
+                // Event listener for maximum button click to toggle dropdown
+                maxButton.addEventListener('click', function(event) {
+                    toggleDropdown(maxButton, maxDropdown);
+                    minButton.setAttribute('aria-expanded', 'false');
+                    minDropdown.style.display = 'none';
+                });
+
+                // Event listener to close dropdown when clicking outside for minimum dropdown
+                document.addEventListener('click', function(event) {
+                    if (!minButton.contains(event.target) && !minDropdown.contains(event.target)) {
+                        minButton.setAttribute('aria-expanded', 'false');
+                        minDropdown.style.display = 'none';
+                    }
+                });
+
+                // Event listener to close dropdown when clicking outside for maximum dropdown
+                document.addEventListener('click', function(event) {
+                    if (!maxButton.contains(event.target) && !maxDropdown.contains(event.target) && maxButton.getAttribute('aria-expanded') === 'true') {
+                        if (!isClickOnValidMaxOption(event.target)) {
+                            maxButton.setAttribute('aria-expanded', 'false');
+                            maxDropdown.style.display = 'none';
+                        }
+                    }
+                });
+
+                // Check if the click is on a valid maximum option
+                function isClickOnValidMaxOption(target) {
+                    return target.classList.contains('Combobox_option__RdEO_') && target.textContent.trim() !== 'No Max';
+                }
+
+                // Select minimum price
+                minDropdown.addEventListener('click', function(event) {
+                    const target = event.target;
+                    if (target.classList.contains('Combobox_option__RdEO_')) {
+                        const selectedMinPrice = target.textContent.trim();
+                        minButton.value = selectedMinPrice;
+                        maxButton.focus(); // Focus on max button after selecting min price
+                        toggleDropdown(minButton, minDropdown); // Close min dropdown after selection
+                        updateAnyPriceInput();
+                    }
+                });
+
+                // Select maximum price
+                maxDropdown.addEventListener('click', function(event) {
+                    const target = event.target;
+                    if (target.classList.contains('Combobox_option__RdEO_')) {
+                        const selectedMaxPrice = target.textContent.trim();
+                        maxButton.value = selectedMaxPrice;
+                        toggleDropdown(maxButton, maxDropdown); // Close max dropdown after selection
+                        updateAnyPriceInput();
+                    }
+                });
+
+                // Function to update the "Any Price" input with the selected range
+                function updateAnyPriceInput() {
+                    const minPrice = minButton.value;
+                    const maxPrice = maxButton.value;
+                    anyPriceInput.textContent = `${minPrice} - ${maxPrice}`;
+                }
+
+                // Hide dropdowns initially
+                minDropdown.style.display = 'none';
+                maxDropdown.style.display = 'none';
+            });
+            // script for bed selector 
+            function toggleBedsDropdown() {
+                const button = document.querySelector('.Select_trigger__X_dKT');
+                const dropdown = document.getElementById('bedsSelect');
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+
+                button.setAttribute('aria-expanded', String(!expanded));
+                dropdown.style.display = expanded ? 'none' : 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                const dropdown = document.getElementById('bedsSelect');
+
+                // Select bed option
+                dropdown.addEventListener('change', function(event) {
+                    const selectedOption = event.target.value;
+                    const button = document.querySelector('.Select_trigger__X_dKT');
+                    button.querySelector('span').textContent = selectedOption + "+ Beds";
+                    button.setAttribute('aria-expanded', 'false');
+                    dropdown.style.display = 'none';
+                });
+            });
+            // cards-Script-Start-Here
+            // JavaScript to show only 4 cards initially
+            document.addEventListener("DOMContentLoaded", function() {
+                showOnlyFourCards();
+            });
+
+            function showOnlyFourCards() {
+                var cards = document.querySelectorAll("#card-container > .col");
+                for (var i = 0; i < cards.length; i++) {
+                    if (i < 4) {
+                        cards[i].style.display = "block";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+
+        </script>
+        <!-- Script section start -->
+    </body>
+</html>

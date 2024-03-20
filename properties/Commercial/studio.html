@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click To Brick</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        
+       
+    </head>
+    <body>
+        <!-- Navbar-section_Start -->
+        <section class="navbar-section">
+            <div class="nav-body">
+                <div class="logo">
+                    <a href="../../index.html"> <img src="logo.png" alt="Logo" width="50px"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link">Services</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li class="dropdown-submenu">
+                                    <a class="test"  >Commercial <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="./office_spaces.html">Office Spaces</a></li>
+                                        <li><a tabindex="-1" href="./studio.html">Studio</a></li>
+                                        <li><a tabindex="-1" href="./warehouses.html">Warehouses</a></li>
+                                        <li><a tabindex="-1" href="./industrial.html">Industrial Properties</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test"  >Residential<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  href="../Residential/luxury_apartments.html">Luxury Apartments</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../search.html">Our Markets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact-us-button" class="nav-link wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../listing_property.html">List Your Property </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Leasing</a>
+                    </li>
+                </ul>
+                <button class="off-canvas-toggle" onclick="toggleOffCanvas()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- offCanvas_start -->   
+            <div class="off-canvas-menu" id="offCanvasMenu">
+                <button class="fas fa-times fa-lg close-btn" onclick="toggleOffCanvas()"></button>
+                <ul class="canvas-menu">
+                    <li><a href="#">Off Canvas Item 1</a></li>
+                    <li><a href="#">Off Canvas Item 2</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                    <li><a href="#">Off Canvas Item 3</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Navbar-section_End -->
+        <!-- Breadcrumb-Section_Start -->
+        <section class="Breadcrumb-section ">
+            <div class="redesign custom-intro">
+                <div class="container">
+                    <h1 class="custom-intro__title">Studio</h1>
+                        <!-- <p class="custom-intro__subtitle serif">Gurugram</p> -->
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb-Section_End -->
+        <!-- Properties-Section_Start  -->
+        <section class="properties-section" >
+            <div class="redesign property-list-section">
+                <div>
+                    <div class="container">
+                        <ul class="property-list   data-container">
+                            <li class="property-list__item feature" onmouseover="showHover(this)" onmouseout="hideHover(this)">
+                                <a class="property-list__item-link" href="/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property.webp" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Sale
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">17901 Collins Ave Unit: TS3407</h4>
+                                        <p>
+                                            17901 Collins Ave Unit: TS3407, Sunny Isles Beach, FL 33160
+                                        </p>
+                                        <p>
+                                            10 BD |
+                                            14 BA
+                                            |
+                                            12,809 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $35,000,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="hturge">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4&amp;text=17901 Collins Ave Unit: TS3407" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=17901 Collins Ave Unit: TS3407&amp;body=17901 Collins Ave Unit: TS3407 - https://philipscheinfeld.com/properties/17901-collins-ave-unit-ts3407-sunny-isles-beach-fl-33160-fa867f23f6b0fcc54f297853c51c39c4" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property-2.webp" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Sale
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">23 E 22nd Street Unit: 8A</h4>
+                                        <p>
+                                            23 East 22nd Street Unit: 8A, New York City, NY 10010
+                                        </p>
+                                        <p>
+                                            3 BD |
+                                            4 BA
+                                            |
+                                            2,723 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $7,995,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="2y7tva">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121&amp;text=23 E 22nd Street Unit: 8A" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=23 E 22nd Street Unit: 8A&amp;body=23 E 22nd Street Unit: 8A - https://philipscheinfeld.com/properties/23-e-22nd-street-unit-8a-new-york-ny-10010-comp-1053591500090015121" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property-3.png" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        Pending
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">521 Park Avenue Unit: 5BC</h4>
+                                        <p>
+                                            521 Park Avenue Unit: 5BC, New York City, NY 10065
+                                        </p>
+                                        <p>
+                                            4 BD |
+                                            5 BA
+                                            |
+                                            3,440 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $5,950,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="7pdyb">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065&amp;text=521 Park Avenue Unit: 5BC" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=521 Park Avenue Unit: 5BC&amp;body=521 Park Avenue Unit: 5BC - https://philipscheinfeld.com/properties/61057949307979913-521-Park-Avenue-Unit-5BC-NewYork-NY-10065" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property-5.webp" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Sale
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">521 Park Avenue Unit: 5-BC</h4>
+                                        <p>
+                                            521 Park Avenue Unit: 5-BC, New York City, NY 10065
+                                        </p>
+                                        <p>
+                                            4 BD |
+                                            4.5 BA
+                                            |
+                                            3,440 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $5,950,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="edwd3s">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582&amp;text=521 Park Avenue Unit: 5-BC" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=521 Park Avenue Unit: 5-BC&amp;body=521 Park Avenue Unit: 5-BC - https://philipscheinfeld.com/properties/521-park-avenue-unit-5-bc-newyorkcity-ny-10065-olrs-130582" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/570-broome-st-12b">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property-6.webp" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        Pending
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">570 Broome St, #12B</h4>
+                                        <p>
+                                            570 Broome Street, Unit 12B, New York City, NY 10013
+                                        </p>
+                                        <p>
+                                            3 BD |
+                                            3 BA
+                                            |
+                                            1,539 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $3,625,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/570-broome-st-12b" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/570-broome-st-12b">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="lwn69k">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/570-broome-st-12b" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/570-broome-st-12b&amp;text=570 Broome St, #12B" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=570 Broome St, #12B&amp;body=570 Broome St, #12B - https://philipscheinfeld.com/properties/570-broome-st-12b" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617">
+                                    <div class="property-list__img">
+                                        <img src="../../assets/img/property.webp" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Sale
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">16 W 19th Street Unit: 7F</h4>
+                                        <p>
+                                            16 West 19th Street Unit: 7F, New York City, NY 10011
+                                        </p>
+                                        <p>
+                                            1 BD |
+                                            2 BA
+                                            |
+                                            1,136 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $1,895,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="l5d7os">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617&amp;text=16 W 19th Street Unit: 7F" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=16 W 19th Street Unit: 7F&amp;body=16 W 19th Street Unit: 7F - https://philipscheinfeld.com/properties/16-w-19th-street-unit-7f-new-york-ny-10011-comp-1480659247224723617" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547">
+                                    <div class="property-list__img">
+                                        <img src="https://dlajgvw9htjpb.cloudfront.net/cms/fb44ee0c-17b4-49c6-a5cd-56e0bdb4fb9c/A11468547/833457947384226510.jpg" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Sale
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">1900 Sunset Harbour Dr Unit: 1411</h4>
+                                        <p>
+                                            1900 Sunset Harbour Dr # 1411, Miami Beach, FL 33139
+                                        </p>
+                                        <p>
+                                            2 BD |
+                                            2 BA
+                                            |
+                                            1,270 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $1,080,000
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="5u1ku">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547&amp;text=1900 Sunset Harbour Dr Unit: 1411" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=1900 Sunset Harbour Dr Unit: 1411&amp;body=1900 Sunset Harbour Dr Unit: 1411 - https://philipscheinfeld.com/properties/1900-sunset-harbour-dr-unit-1411-miami-beach-fl-33139-a11468547" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="property-list__item feature">
+                                <a class="property-list__item-link" href="/properties/1369-n-venetian-way-miami-fl-33139-a11402815">
+                                    <div class="property-list__img">
+                                        <img src="https://dq1niho2427i9.cloudfront.net/fb44ee0c-17b4-49c6-a5cd-56e0bdb4fb9c/107687557.jpg" alt="">
+                                    </div>
+                                    <span class="property-list__label">
+                                        For Lease
+                                    </span>
+                                    <div class="property-list__text">
+                                        <h4 class="serif">1369 N Venetian Way</h4>
+                                        <p>
+                                            1369 N Venetian Way, Miami, FL 33139
+                                        </p>
+                                        <p>
+                                            4 BD |
+                                            6 BA
+                                            |
+                                            7,283 Sq.Ft.
+                                        </p>
+                                        <h5 style="text-transform: capitalize">
+                                            $130,000/mo
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="property-list__hover">
+                                    <a href="/properties/1369-n-venetian-way-miami-fl-33139-a11402815" class="hover-link"></a>
+                                    <div class="property-list__buttons">
+                                        <a class="property-list__view" href="/properties/1369-n-venetian-way-miami-fl-33139-a11402815">
+                                            <button class="btn btn--primary-dark button-style-1" fdprocessedid="ylwbwm">VIEW PROPERTY</button>
+                                            <button class="btn btn--primary-light button-style-1">VIEW PROPERTY</button>
+                                        </a>
+                                        <div class="property-list__share">
+                                            <a class="btn btn--primary-dark button-style-1">SHARE PROPERTY</a>
+                                            <a class="btn btn--primary-light button-style-1">SHARE PROPERTY</a>
+                                            <ul class="socials socials--block-dark">
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://philipscheinfeld.com/properties/1369-n-venetian-way-miami-fl-33139-a11402815" target="_blank" class="socials__link"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="https://twitter.com/intent/tweet?url=https://philipscheinfeld.com/properties/1369-n-venetian-way-miami-fl-33139-a11402815&amp;text=1369 N Venetian Way" target="_blank" class="socials__link"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="mailto:?subject=1369 N Venetian Way&amp;body=1369 N Venetian Way - https://philipscheinfeld.com/properties/1369-n-venetian-way-miami-fl-33139-a11402815" class="socials__link" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="empty-result" style="display: none">
+                            <h3>No Results Found. Please Try Another Search.</h3>
+                        </div>
+                        <div class="lp-pagination pagination-container pagination-style-1">
+                            <div class="paginationjs">
+                                <div class="paginationjs-pages">
+                                    <ul>
+                                        <li class="paginationjs-prev disabled">
+                                            <a>«</a>
+                                        </li>
+                                        <li class="paginationjs-page J-paginationjs-page active" data-num="1">
+                                            <a>1</a>
+                                        </li>
+                                        <li class="paginationjs-page J-paginationjs-page" data-num="2">
+                                            <a href="https://philipscheinfeld.com/properties/sale?7d1f40dcc04548e0aa10fe35f7dd8ee3=2">2</a>
+                                        </li>
+                                        <li class="paginationjs-next J-paginationjs-next" data-num="2" title="Next page">
+                                            <a href="https://philipscheinfeld.com/properties/sale?7d1f40dcc04548e0aa10fe35f7dd8ee3=2">»</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Properties-Section_End -->
+        <!-- Contact-section_Start -->
+        <section class="contact-hm-section">
+            <div class="redesign work-with-us">
+                <div class="container">
+                    <h2 class="serif">Work With Us</h2>
+                    <p>With over $500 Million in real estate transactions, the Philip Scheinfeld team is committed to bringing a bespoke real estate experience to each client. </p>
+                    <div class="btn-container">
+                        <a role="button" onclick="showContactFormModal()" class="btn btn--primary-light button-style-2">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-section_End -->
+        <!-- Footer section start -->    
+        <footer id="global-footer" class="is-font-color-light is-background-color-dark gl-footer">
+            <div class="footer redesign  no_newsletter ">
+                <div class="container">
+                    <h3>Philip Scheinfeld Team</h3>
+                    <div class="info-wrap">
+                        <div class="info-wrap-contact agent_box">
+                            <div class="info-wrap-contact_zone type_user">
+                                <h4 class="serif">Licensed in New York and Florida</h4>
+                                <div class="info-wrap-contact_cell">
+                                    <i>
+                                        <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0C0.903517 0 0 0.903517 0 2V16.6667C0 17.7631 0.903517 18.6667 2 18.6667H28C29.0965 18.6667 30 17.7631 30 16.6667V2C30 0.903517 29.0965 0 28 0H2ZM2.4375 1.33333H27.5625L15.6458 11.4896C15.3389 11.7512 14.6612 11.7512 14.3542 11.4896L2.4375 1.33333ZM1.33333 2.13542L10.1979 9.6979L1.33333 16.5729V2.13542ZM28.6667 2.13542V16.5729L19.8021 9.6979L28.6667 2.13542ZM11.2396 10.5833L13.4896 12.5C14.3543 13.2369 15.6457 13.2369 16.5104 12.5L18.7604 10.5833L27.4687 17.3333H2.53125L11.2396 10.5833Z" fill="#1A1A1A"></path>
+                                        </svg>
+                                    </i>
+                                    <p class="contact_title">Email</p>
+                                    <a href="mailto:thephilipscheinfeldteam@compass.com" class="lp-link info-wrap-contact_link grey-text hyperlink-style-2">thephilipscheinfeldteam@compass.com</a>
+                                </div>
+                                <div class="info-wrap-contact_cell">
+                                    <i>
+                                        <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7964 8.1207H19.2036V8.7279C19.2036 10.8195 20.9082 12.5259 23.001 12.5259H24.741L25.2852 20.7051C25.3776 22.1235 24.2868 23.2719 22.8822 23.2719H7.0032C5.5944 23.2719 4.5084 22.1085 4.6002 20.7039C4.782 17.9895 4.9152 15.2313 5.154 12.5265H6.9996C9.0918 12.5265 10.797 10.8207 10.797 8.7285V8.1207H10.7964ZM11.46 16.5807C11.46 14.6565 13.0188 13.0977 14.943 13.0977C16.8666 13.0977 18.4254 14.6571 18.4254 16.5807C18.4254 18.5055 16.8678 20.0631 14.943 20.0631C13.02 20.0637 11.46 18.5043 11.46 16.5807ZM14.943 12.0381C12.4344 12.0381 10.4004 14.0721 10.4004 16.5807C10.4004 19.0887 12.435 21.1233 14.943 21.1233C17.4486 21.1233 19.485 19.0869 19.485 16.5807C19.485 14.0727 17.451 12.0381 14.943 12.0381ZM9.0846 4.8363C8.22 4.8363 7.512 5.5443 7.512 6.4089V8.7285C7.512 9.0093 7.2804 9.2415 6.999 9.2415H1.5726C1.2906 9.2415 1.0596 9.0111 1.0596 8.7285V6.9285C1.0596 6.4797 1.1628 6.0945 1.3902 5.7069C1.896 4.8465 2.7294 4.1013 3.795 3.4749C9.279 0.2517 20.7192 0.2523 26.2044 3.4749C27.2706 4.1013 28.104 4.8465 28.6098 5.7069C28.8354 6.0921 28.9398 6.4815 28.9398 6.9285V8.7285C28.9398 9.0111 28.71 9.2415 28.4268 9.2415H23.0004C22.719 9.2415 22.4874 9.0093 22.4874 8.7285V6.4089C22.4874 5.5425 21.7806 4.8363 20.9148 4.8363H9.0846ZM8.571 6.4089C8.571 6.1263 8.8026 5.8965 9.0846 5.8965H20.9154C21.1968 5.8965 21.429 6.1275 21.429 6.4089V8.7285C21.429 9.5943 22.1352 10.3017 23.001 10.3017H28.4274C29.292 10.3017 30 9.5931 30 8.7285V6.9285C30 6.2835 29.8464 5.7291 29.5206 5.1729C28.9188 4.1493 27.9564 3.2799 26.7384 2.5641C20.9214 -0.8547 9.0798 -0.8547 3.2622 2.5641C2.0436 3.2799 1.0812 4.1487 0.48 5.1729C0.153 5.7291 0 6.2835 0 6.9279V8.7279C0 9.5925 0.7092 10.3011 1.5726 10.3011H6.999C7.8648 10.3011 8.571 9.5937 8.571 8.7279V6.4089ZM9.7368 7.5915V8.7285C9.7368 10.2387 8.5092 11.4669 6.999 11.4669H4.6686C4.3914 11.4669 4.164 11.6799 4.1412 11.9511C3.8892 14.8347 3.7386 17.7435 3.5448 20.6331C3.4116 22.6425 4.989 24.3315 7.0032 24.3315H22.8822C24.882 24.3315 26.475 22.6575 26.3406 20.6343L25.7622 11.9607C25.7436 11.6811 25.5102 11.4675 25.2342 11.4675L23.001 11.4663C21.4902 11.4663 20.2632 10.2375 20.2632 8.7279V7.5909C20.2632 7.2981 20.0262 7.0611 19.7334 7.0611H10.2666C9.9738 7.0611 9.7368 7.2987 9.7368 7.5915Z" fill="#1A1A1A"></path>
+                                        </svg>
+                                    </i>
+                                    <p class="contact_title">Phone Number</p>
+                                    <a href="tel:(917) 446-0523" class="lp-link info-wrap-contact_link grey-text hyperlink-style-2">(917) 446-0523</a>
+                                </div>
+                            </div>
+                            <div class="info-wrap-contact_zone">
+                                <div class="info-wrap-contact_cell">
+                                    <i>
+                                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="#1A1A1A"></path>
+                                            <path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="#1A1A1A"></path>
+                                            <path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="#1A1A1A"></path>
+                                        </svg>
+                                    </i>
+                                    <p class="info-wrap-contact_title">Address</p>
+                                    <p class="info-wrap-contact_link grey-text">10 East 53rd St. 5th Floor New York, NY 10022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_footer first_text_footer">
+                        <div class="images_box">
+                            <div class="img_size">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/r127ssxwuqmngqmoaefv/compass-white" alt="Footer Image" sizes="200px">
+                            </div>
+                        </div>
+                        <div class="luxury-text">
+                            <div id="ig08">
+                                <p id="ijcnj">
+                                    <a id="ijpfi" class="link" href="##" target="_blank" rel="noopener">Fair Housing Notice</a><br><br>
+                                    <a id="ijpfi" class="link" href="##" target="_blank" rel="noopener">Compass SOP</a> <br><br>
+                                    Philip Scheinfeld Team is a team of real estate agents affiliated with Compass. 
+                                    <a id="i82tk" class="link" href="https://www.compass.com/" target="_blank" rel="noopener">Compass</a> is a licensed real estate broker and abides by equal housing opportunity laws. All material presented herein is intended for informational purposes only. Information is compiled from sources deemed reliable but is subject to errors, omissions, changes in price, condition, sale, or withdrawal without notice. No statement is made as to accuracy of any description. All measurements and square footages are approximate. This is not intended to solicit property already listed. Nothing herein shall be construed as legal, accounting or other professional advice outside the realm of real estate brokerage.</p>
+                            </div>
+                            <!-- <p><img id="ipycy" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zhrpzggroyrdsr8somp2/realtor-eho-logo-07232021-update-light"></p> -->
+                            <style>* { box-sizing: border-box; } body {margin: 0;}ul{list-style:inherit;}#ijcnj{font-size:12px;}#ijpfi{font-weight:400;color:#fff;}#i82tk{font-weight:400;color:#fff;}#ipycy{width:100px;margin:20px 0 0 0;}</style>
+                        </div>
+                    </div>
+                    <div class="text_footer second_text_footer" style="margin-bottom: 0px;">
+                        
+                    </div>
+                    <div class="info-privacy">
+                        <div class="row form-row info-privacy__row">
+                    
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-col form-col--powered powered-box">
+                                <div class="powered_zone">
+                                    Powered by <a href="https://www.luxurypresence.com/" target="_blank" class="lp-link grey-text luxury-link underlined hyperlink-style-2">Luxury Presence</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-col form-col--copyright">
+                                <div class="copy_zone">
+                                    <span class="copy_words">Copyright ©</span> <span class="auto-year-update">2024</span>
+                                    |
+                                    <a href="/terms-and-conditions" class="lp-link grey-text hyperlink-style-2">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class=" col-lg-4 col-md-6 col-sm-12 form-col form-col--socials">
+                                <ul class="lp-socials social_icons-style-2 socials socials--grey socials_zone">
+                            
+                                    <li>
+                                    <a href="https://www.instagram.com/philipscheinfeldteam/?hl=en" class="lp-socials__link socials__item socials__link wow fadeInUp" data-wow-delay=".0s" target="_blank" data-wow-offset="10" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
+                                        <svg viewBox="0 0 9 9" width="18" height="18"><path d="M7.43.911a.658.658 0 100 1.316.658.658 0 000-1.316M4.5 6.33a1.83 1.83 0 110-3.659 1.83 1.83 0 010 3.659m0-4.648a2.818 2.818 0 10-.001 5.637A2.818 2.818 0 004.5 1.682m4.468 5.037c-.024.534-.114.826-.189 1.018-.1.256-.218.439-.41.63a1.697 1.697 0 01-.632.412c-.192.075-.484.165-1.018.19C6.139 8.995 5.966 9 4.5 9c-1.465 0-1.64-.005-2.218-.031-.534-.025-.826-.115-1.019-.19-.256-.1-.439-.218-.63-.411a1.703 1.703 0 01-.412-.631C.146 7.545.057 7.253.032 6.719.006 6.139 0 5.966 0 4.5c0-1.465.006-1.639.032-2.218.025-.535.114-.826.189-1.019.1-.256.22-.439.411-.63C.824.44 1.007.32 1.263.22c.193-.075.485-.164 1.019-.189C2.862.006 3.035 0 4.5 0c1.466 0 1.639.006 2.219.032.534.025.826.114 1.018.189.256.1.439.22.632.411.192.192.31.375.41.631.075.193.165.484.189 1.019.027.58.032.753.032 2.218 0 1.466-.005 1.64-.032 2.219"></path></svg>
+                                    </a>
+                                    </li>
+                                    <li>
+                                    <a href="https://www.compass.com/agents/the-philip-scheinfeld-team/" class="lp-socials__link socials__item socials__link wow fadeInUp" data-wow-delay=".1s" target="_blank" data-wow-offset="10" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                        <svg width="20" height="20" viewBox="0 0 60.14 60"><path d="M29.86 0a30 30 0 00.28 60 30.03 30.03 0 0030-30A30 30 0 0029.86 0zm.28 8a22.03 22.03 0 0122 22 22 22 0 11-22-22zm7.18 9.17l-20 20 5.65 5.66 20-20z"></path></svg>
+                                    </a>
+                                    </li>
+                                </ul>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
+
+        
+        <div id="modal-global-contact-us" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="contact-form redesign " style="background-image: url('https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/kyfnzxuquogjkgqy8xvv/illgander-1260622')">
+                    <div class="container">
+                        <div class="section-details" style="--colorTxt: #ffffff">
+                            <h2>Contact Details</h2>
+                            <div class="info-zone">
+                                <div class="info-zone_contact type_user">
+                                    <h4 class="serif">Philip Scheinfeld Team</h4>
+                                    <div class="info-zone_contact_cell">
+                                        <i>
+                                            <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7964 8.1207H19.2036V8.7279C19.2036 10.8195 20.9082 12.5259 23.001 12.5259H24.741L25.2852 20.7051C25.3776 22.1235 24.2868 23.2719 22.8822 23.2719H7.0032C5.5944 23.2719 4.5084 22.1085 4.6002 20.7039C4.782 17.9895 4.9152 15.2313 5.154 12.5265H6.9996C9.0918 12.5265 10.797 10.8207 10.797 8.7285V8.1207H10.7964ZM11.46 16.5807C11.46 14.6565 13.0188 13.0977 14.943 13.0977C16.8666 13.0977 18.4254 14.6571 18.4254 16.5807C18.4254 18.5055 16.8678 20.0631 14.943 20.0631C13.02 20.0637 11.46 18.5043 11.46 16.5807ZM14.943 12.0381C12.4344 12.0381 10.4004 14.0721 10.4004 16.5807C10.4004 19.0887 12.435 21.1233 14.943 21.1233C17.4486 21.1233 19.485 19.0869 19.485 16.5807C19.485 14.0727 17.451 12.0381 14.943 12.0381ZM9.0846 4.8363C8.22 4.8363 7.512 5.5443 7.512 6.4089V8.7285C7.512 9.0093 7.2804 9.2415 6.999 9.2415H1.5726C1.2906 9.2415 1.0596 9.0111 1.0596 8.7285V6.9285C1.0596 6.4797 1.1628 6.0945 1.3902 5.7069C1.896 4.8465 2.7294 4.1013 3.795 3.4749C9.279 0.2517 20.7192 0.2523 26.2044 3.4749C27.2706 4.1013 28.104 4.8465 28.6098 5.7069C28.8354 6.0921 28.9398 6.4815 28.9398 6.9285V8.7285C28.9398 9.0111 28.71 9.2415 28.4268 9.2415H23.0004C22.719 9.2415 22.4874 9.0093 22.4874 8.7285V6.4089C22.4874 5.5425 21.7806 4.8363 20.9148 4.8363H9.0846ZM8.571 6.4089C8.571 6.1263 8.8026 5.8965 9.0846 5.8965H20.9154C21.1968 5.8965 21.429 6.1275 21.429 6.4089V8.7285C21.429 9.5943 22.1352 10.3017 23.001 10.3017H28.4274C29.292 10.3017 30 9.5931 30 8.7285V6.9285C30 6.2835 29.8464 5.7291 29.5206 5.1729C28.9188 4.1493 27.9564 3.2799 26.7384 2.5641C20.9214 -0.8547 9.0798 -0.8547 3.2622 2.5641C2.0436 3.2799 1.0812 4.1487 0.48 5.1729C0.153 5.7291 0 6.2835 0 6.9279V8.7279C0 9.5925 0.7092 10.3011 1.5726 10.3011H6.999C7.8648 10.3011 8.571 9.5937 8.571 8.7279V6.4089ZM9.7368 7.5915V8.7285C9.7368 10.2387 8.5092 11.4669 6.999 11.4669H4.6686C4.3914 11.4669 4.164 11.6799 4.1412 11.9511C3.8892 14.8347 3.7386 17.7435 3.5448 20.6331C3.4116 22.6425 4.989 24.3315 7.0032 24.3315H22.8822C24.882 24.3315 26.475 22.6575 26.3406 20.6343L25.7622 11.9607C25.7436 11.6811 25.5102 11.4675 25.2342 11.4675L23.001 11.4663C21.4902 11.4663 20.2632 10.2375 20.2632 8.7279V7.5909C20.2632 7.2981 20.0262 7.0611 19.7334 7.0611H10.2666C9.9738 7.0611 9.7368 7.2987 9.7368 7.5915Z" fill="#1A1A1A"></path>
+                                            </svg>
+                                        </i>
+                                        <p class="contact_title">Phone</p>
+                                        <a href="tel:518-524-5168" class="lp-link info-zone_contact_link link hyperlink-style-2">518-524-5168</a>
+                                    </div>
+                                    <div class="info-zone_contact_cell">
+                                        <i>
+                                            <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 0C0.903517 0 0 0.903517 0 2V16.6667C0 17.7631 0.903517 18.6667 2 18.6667H28C29.0965 18.6667 30 17.7631 30 16.6667V2C30 0.903517 29.0965 0 28 0H2ZM2.4375 1.33333H27.5625L15.6458 11.4896C15.3389 11.7512 14.6612 11.7512 14.3542 11.4896L2.4375 1.33333ZM1.33333 2.13542L10.1979 9.6979L1.33333 16.5729V2.13542ZM28.6667 2.13542V16.5729L19.8021 9.6979L28.6667 2.13542ZM11.2396 10.5833L13.4896 12.5C14.3543 13.2369 15.6457 13.2369 16.5104 12.5L18.7604 10.5833L27.4687 17.3333H2.53125L11.2396 10.5833Z" fill="#1A1A1A"></path>
+                                            </svg>
+                                        </i>
+                                        <p class="contact_title">Email</p>
+                                        <a href="mailto:thephilipscheinfeldteam@compass.com" class="lp-link info-zone_contact_link link hyperlink-style-2">thephilipscheinfeldteam@compass.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-zone_contact type_user">
+                                </div>
+                                <div class="info-zone_contact">
+                                    <div class="info-zone_contact_cell">
+                                            <i>
+                                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="#1A1A1A"></path>
+                                                    <path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="#1A1A1A"></path>
+                                                    <path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="#1A1A1A"></path>
+                                                </svg>
+                                            </i>
+                                        <p class="info-wrap-contact_title">Address</p>
+                                        <p class="info-zone_contact_link pre-line">10 East 53rd St. 5th Floor New York, NY 10022</p>
+                                    </div>
+                                </div>
+                                <div class="info-zone_contact">
+                                    <div class="info-zone_contact_cell">
+                                        <p class="pre-line"></p><div></div><div id="ig22"><p><strong>Licensed in New York and Florida</strong></p></div><style>* { box-sizing: border-box; } body {margin: 0;}ul{list-style:inherit;}#ig22{padding:0px;}</style><p></p>
+                                    </div>
+                                </div>
+                                <ul class="lp-socials social_icons-style-2 socials socials--grey socials_zone footer__contact-column">
+                                    <li>
+                                        <a href="https://www.instagram.com/philipscheinfeldteam/?hl=en" class="lp-socials__link socials__item wow fadeInUp socials__link" data-wow-delay=".0s" target="_blank" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
+                                            <svg viewBox="0 0 9 9" width="18" height="18"><path d="M7.43.911a.658.658 0 100 1.316.658.658 0 000-1.316M4.5 6.33a1.83 1.83 0 110-3.659 1.83 1.83 0 010 3.659m0-4.648a2.818 2.818 0 10-.001 5.637A2.818 2.818 0 004.5 1.682m4.468 5.037c-.024.534-.114.826-.189 1.018-.1.256-.218.439-.41.63a1.697 1.697 0 01-.632.412c-.192.075-.484.165-1.018.19C6.139 8.995 5.966 9 4.5 9c-1.465 0-1.64-.005-2.218-.031-.534-.025-.826-.115-1.019-.19-.256-.1-.439-.218-.63-.411a1.703 1.703 0 01-.412-.631C.146 7.545.057 7.253.032 6.719.006 6.139 0 5.966 0 4.5c0-1.465.006-1.639.032-2.218.025-.535.114-.826.189-1.019.1-.256.22-.439.411-.63C.824.44 1.007.32 1.263.22c.193-.075.485-.164 1.019-.189C2.862.006 3.035 0 4.5 0c1.466 0 1.639.006 2.219.032.534.025.826.114 1.018.189.256.1.439.22.632.411.192.192.31.375.41.631.075.193.165.484.189 1.019.027.58.032.753.032 2.218 0 1.466-.005 1.64-.032 2.219"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.compass.com/agents/the-philip-scheinfeld-team/" class="lp-socials__link socials__item wow fadeInUp socials__link" data-wow-delay=".1s" target="_blank" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                        <svg width="20" height="20" viewBox="0 0 60.14 60"><path d="M29.86 0a30 30 0 00.28 60 30.03 30.03 0 0030-30A30 30 0 0029.86 0zm.28 8a22.03 22.03 0 0122 22 22 22 0 11-22-22zm7.18 9.17l-20 20 5.65 5.66 20-20z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>          
+                            </div>
+                        </div>
+                        <div class="section-message">
+                            <form id="contact-form" data-type="contact-form">
+                                <h2>Submit a Message</h2>
+                                <div class="h-pot">
+                                    <label for="-middleName">Middle Name</label>
+                                    <input id="-middleName" name="middleName" value="" autocomplete="off" tabindex="-1">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-name" class="lp-label">Name</label>
+                                    <input id="prod-name" name="name" value="" required="" class="lp-input lp-input--light" fdprocessedid="7bie3n">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-email" class="lp-label">Email</label>
+                                    <input id="prod-email" type="email" name="email" value="" required="" class="lp-input lp-input--light" fdprocessedid="rl7bl">
+                                </div>
+                                <div class="lp-input-group">
+                                    <label for="prod-phone" class="lp-label">Phone</label>
+                                    <input id="prod-phone" type="tel" name="phoneNumber" value="" required="" class="lp-input lp-input--light" fdprocessedid="44zxz">
+                                </div>
+                                <div class="lp-input-group m16">
+                                    <label for="prod-message" class="lp-label">Message</label>
+                                    <textarea id="prod-message" name="message" value="" required="" class="lp-input"></textarea>
+                                </div>
+                                <div class="lp-disclaimer">
+                                    By providing The Philip Scheinfeld Team
+                                    your contact information, you acknowledge and agree to our
+                                    <a href="/terms-and-conditions" target="_blank">Privacy Policy</a> and consent to receiving marketing communications,
+                                    including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices.
+                                    This consent isn’t necessary for purchasing any products or services and you may opt out at any time.
+                                    To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe
+                                    link in the emails. Message and data rates may apply.
+                                </div>
+                                <input style="display: none;" type="text" name="source" value="CONTACT_INQUIRY">
+                                <button type="submit" id="submit-button" class="submitButton lp-btn button-style-2" fdprocessedid="t7izzf">
+                                    <span class="label-initial">Submit</span>
+                                    <span class="label-loading" style="display:none;">Submitting</span>
+                                    <span class="label-success" style="display:none;">Submitted</span>
+                                    <span class="submit-icon fas fa-circle-notch fa-spin" aria-hidden="true"></span>
+                                </button>
+                                <p class="success-message success hide" style="display:none;">
+                                    Message sent successfully!
+                                </p>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close lp-close" type="button" aria-label="close modal" fdprocessedid="otb9u">
+                <span class="lp-close-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+
+        <!-- Script section start -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="../../assets/js/script.js"></script>
+        <script>
+            function toggleOffCanvas() {
+                var offCanvasMenu = document.getElementById("offCanvasMenu");
+                if (offCanvasMenu.style.transform === "translateX(-250px)") {
+                    offCanvasMenu.style.transform = "translateX(0)";
+                } else {
+                    offCanvasMenu.style.transform = "translateX(-250px)";
+                }
+            }
+        </script>
+        <!-- Script section start -->
+    </body>
+</html>
